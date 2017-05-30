@@ -11,4 +11,10 @@
     <style name="AppThemeNoBar" parent="Theme.AppCompat.Light.NoActionBar">
     </style>
 
+    <style name="StyleEditText">
+        <item name="android:colorControlNormal">#BDBDBD</item>
+        <item name="colorControlActivated">#faffffff</item>
+        <item name="android:textColorHint">#BDBDBD</item>
+    </style>
+
 </resources>
