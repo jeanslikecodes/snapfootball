@@ -80,7 +80,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txtNaoTemConta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Não tem conta? Registre-se!"
@@ -90,7 +90,8 @@
             android:textColor="#424242"
             android:layout_marginBottom="21dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:onClick="registrarConta"/>
     </RelativeLayout>
 
 </FrameLayout>

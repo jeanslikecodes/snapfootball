@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:id="@+id/newUsuarioFragment"
+    tools:context="com.example.jeancarlos.snapfootball.NewUsuarioFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_account_circle_white_48dp"
+            app:civ_border_color="#757575"
+            app:civ_border_width="0dp" />
+
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="Digite seu username:"
+            android:inputType="textPersonName"
+            android:textColor="#fff"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:theme="@style/StyleEditText" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Digite seu email:"
+            android:inputType="textEmailAddress"
+            android:textColor="#fff"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:theme="@style/StyleEditText" />
+
+        <EditText
+            android:id="@+id/editSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Digite sua senha:"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:theme="@style/StyleEditText" />
+
+        <EditText
+            android:id="@+id/editSenha2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="Digite sua senha novamente:"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:theme="@style/StyleEditText" />
+
+        <Button
+            android:id="@+id/btnCriarConta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="#757575"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Criar Conta" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -29,7 +29,7 @@ public class DatabaseFactory extends SQLiteOpenHelper {
     public static final String USU_ID = "usu_id";
 
     public DatabaseFactory(Context context) {
-        super(context, Snap_DB, null, 1);
+        super(context, Snap_DB, null, 4);
     }
 
     @Override
@@ -49,7 +49,7 @@ public class DatabaseFactory extends SQLiteOpenHelper {
                 MARCA +" TEXT NOT NULL, " +
                 ESTADO +" TEXT NOT NULL, " +
                 PRECO +" TEXT NOT NULL, " +
-                USU_ID +"TEXT NOT NULL, " +
+                USU_ID +" INTEGER, " +
                 "FOREIGN KEY("+ USU_ID +") REFERENCES "+ USUARIO_TABLE +"("+ ID_USUARIO +"));";
 
         db.execSQL(sqlUsuario);

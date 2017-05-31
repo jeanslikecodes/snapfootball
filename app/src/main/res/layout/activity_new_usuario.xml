@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeancarlos.snapfootball.NewUsuarioActivity">
+
+
+    <fragment
+        android:id="@+id/newUsuarioFragment"
+        class="com.example.jeancarlos.snapfootball.NewUsuarioFragment"
+        tools:layout="@layout/fragment_new_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </fragment>
+</RelativeLayout>

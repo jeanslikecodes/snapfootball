@@ -12,9 +12,9 @@
     </style>
 
     <style name="StyleEditText">
-        <item name="android:colorControlNormal">#BDBDBD</item>
+        <item name="android:colorControlNormal">#757575</item>
         <item name="colorControlActivated">#faffffff</item>
-        <item name="android:textColorHint">#BDBDBD</item>
+        <item name="android:textColorHint">#757575</item>
     </style>
 
 </resources>
