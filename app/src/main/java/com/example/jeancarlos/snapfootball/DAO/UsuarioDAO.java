@@ -9,6 +9,8 @@ import android.util.Log;
 
 import com.example.jeancarlos.snapfootball.Database.DatabaseFactory;
 import com.example.jeancarlos.snapfootball.Model.Usuario;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +23,8 @@ public class UsuarioDAO extends DatabaseFactory {
 
     public UsuarioDAO(Context context) { super(context); }
 
+    DatabaseReference rootRef, demoRef;
+
     @NonNull
     private ContentValues getContentValues(Usuario usuario) {
         ContentValues dados = new ContentValues();
@@ -31,9 +35,23 @@ public class UsuarioDAO extends DatabaseFactory {
     }
 
     public void insertUsuario(Usuario usuario) {
-        SQLiteDatabase db = getWritableDatabase();
-        ContentValues dados = getContentValues(usuario);
-        db.insert(USUARIO_TABLE, null, dados);
+
+
+        rootRef = FirebaseDatabase.getInstance().getReference();
+
+        demoRef = rootRef.child("users");
+
+
+        Usuario user = new Usuario();
+
+        user.setUsername("jeanslikehouses");
+        user.setSenha("1234");
+        user.setEmail("uehueh");
+
+
+
+
+        demoRef.push().setValue(user);
     }
 
     public void updateUsuario(Usuario usuario) {
@@ -59,7 +77,7 @@ public class UsuarioDAO extends DatabaseFactory {
             List<Usuario> usuarios = new ArrayList<>();
             while (c.moveToNext()) {
                 Usuario usuario = new Usuario();
-                usuario.setId_usuario(c.getLong(c.getColumnIndex(ID_USUARIO)));
+                //usuario.setId_usuario(c.getLong(c.getColumnIndex(ID_USUARIO)));
                 usuario.setUsername(c.getString(c.getColumnIndex(USERNAME)));
                 usuario.setEmail(c.getString(c.getColumnIndex(EMAIL)));
                 usuario.setSenha(c.getString(c.getColumnIndex(SENHA)));

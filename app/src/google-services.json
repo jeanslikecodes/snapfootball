@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "382672924274",
+    "firebase_url": "https://snapfootball-b4c07.firebaseio.com",
+    "project_id": "snapfootball-b4c07",
+    "storage_bucket": "snapfootball-b4c07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382672924274:android:f3d46d863fee36c2",
+        "android_client_info": {
+          "package_name": "com.example.jeancarlos.snapfootball"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382672924274-4a1pg2h62lph6hatk0l2f5n1j1nbd8ko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxxo8FYmdhvNaWqg_k_37tkMEtpPcsbNw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

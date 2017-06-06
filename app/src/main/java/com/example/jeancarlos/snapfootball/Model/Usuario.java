@@ -1,22 +1,30 @@
 package com.example.jeancarlos.snapfootball.Model;
 
+import com.google.firebase.database.IgnoreExtraProperties;
+
 import java.io.Serializable;
 
 /**
  * Created by Jean Carlos on 26/05/2017.
  */
 
+@IgnoreExtraProperties
 public class Usuario implements Serializable {
 
-    private Long id_usuario;
+
+    private String id_usuario;
     private String username;
     private String email;
     private String senha;
 
-    public Long getId_usuario() {
+    public Usuario() {
+        // Default constructor required for calls to DataSnapshot.getValue(User.class)
+    }
+
+    public String getId_usuario() {
         return id_usuario;
     }
-    public void setId_usuario(Long id_usuario) {
+    public void setId_usuario(String id_usuario) {
         this.id_usuario = id_usuario;
     }
 
@@ -40,4 +48,6 @@ public class Usuario implements Serializable {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
+
 }

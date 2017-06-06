@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="600px"
-            android:layout_height="600px"
+            android:layout_width="300px"
+            android:layout_height="300px"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="14dp"
@@ -36,7 +36,7 @@
 
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/etUsernameLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -47,7 +47,7 @@
                 android:theme="@style/StyleEditText" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/etSenhaLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
